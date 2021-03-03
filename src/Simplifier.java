@@ -76,5 +76,32 @@ public class Simplifier {
         System.out.println(a);
     }
 
+    public static boolean isEqual(String a, String b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Integer a, Integer b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Short a, Short b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Long a, Long b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Double a, Double b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Float a, Float b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Character a, Character b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Byte a, Byte b){
+        return a.equals(b);
+    }
+    public static boolean isEqual(Boolean a, Boolean b){
+        return a.equals(b);
+    }
 
 }
