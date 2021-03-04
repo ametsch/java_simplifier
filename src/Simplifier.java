@@ -1,3 +1,5 @@
+import java.nio.charset.Charset;
+
 
 public class Simplifier {
     private Simplifier(){}
@@ -160,5 +162,44 @@ public class Simplifier {
             temp.append(i);
         }
         return temp.toString();
+    }
+    public static long str2long(String a){
+        return Long.valueOf(a);
+    }
+    public static int str2int(String a){
+        return Integer.valueOf(a);
+    }
+    public static double str2double(String a){
+        return Double.valueOf(a);
+    }
+    public static short str2short(String a){
+        return Short.valueOf(a);
+    }
+    public static byte str2byte(String a){
+        return Byte.valueOf(a);
+    }
+    public static float str2float(String a){
+        return Float.valueOf(a);
+    }
+    public static byte[] str2byteArray(String a){
+        return a.getBytes(Charset.forName("UTF-8"));
+    }
+    public static String byteArray2string(byte[] a){
+        return new String(a, Charset.forName("UTF-8"));
+    }
+    public static byte[] str2byteArray(String a, Charset charset){
+        return a.getBytes(charset);
+    }
+    public static String byteArray2string(byte[] a, Charset charset){
+        return new String(a, charset);
+    }
+    public static String byteArray2hexString(byte[] a){
+        StringBuilder sb = new StringBuilder();
+        for(Byte i : a){
+            int temp = (int) i;
+            sb.append(Integer.toHexString(temp));
+            sb.append(" ");
+        }
+        return sb.toString();
     }
 }
