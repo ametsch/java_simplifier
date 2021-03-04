@@ -202,4 +202,14 @@ public class Simplifier {
         }
         return sb.toString();
     }
+    public static long int2long(int a){
+        return (long) a;
+    }
+    public static int short2int(short a){
+        return (int) a;
+    }
+    public static long short2long(short a){
+        return (long) a;
+    }
+
 }
