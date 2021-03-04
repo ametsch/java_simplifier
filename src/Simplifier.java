@@ -147,5 +147,18 @@ public class Simplifier {
             return false;
         }
     }
-
+//----------------------------------------------------------------------------------------------------------------------
+    public static double float2double(Float a){
+        return Double.valueOf(a);
+    }
+    public static String charArray2string(char[] a){
+        return new String(a);
+    }
+    public static String obj2strCombiner(Object ... args){
+        StringBuilder temp = new StringBuilder();
+        for(Object i : args){
+            temp.append(i);
+        }
+        return temp.toString();
+    }
 }
