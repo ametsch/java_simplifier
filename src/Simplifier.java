@@ -1,7 +1,7 @@
 
 public class Simplifier {
     private Simplifier(){}
-
+//----------------------------------------------------------------------------------------------------------------------
     public static final short shortUpperLimit = 32767;
     public static final short shortLowerLimit = -32768;
 
@@ -19,7 +19,7 @@ public class Simplifier {
 
     public static final double doubleUpperLimit = 1.7e+308d;
     public static final double doubleLowerLimit = 1.7e-308d;
-
+//----------------------------------------------------------------------------------------------------------------------
     public static void p(String a){
         System.out.print(a);
     }
@@ -47,7 +47,7 @@ public class Simplifier {
     public static void p(boolean a){
         System.out.print(a);
     }
-
+//------------------------------------------------------------------------------------------------------------------
     public static void pln(String a){
         System.out.println(a);
     }
@@ -75,33 +75,73 @@ public class Simplifier {
     public static void pln(boolean a){
         System.out.println(a);
     }
-
+//----------------------------------------------------------------------------------------------------------------------
+    public static void pf(String a, Object ... args){
+        System.out.printf(a, args);
+    }
+//----------------------------------------------------------------------------------------------------------------------
     public static boolean isEqual(String a, String b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Integer a, Integer b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Short a, Short b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Long a, Long b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Double a, Double b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Float a, Float b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Character a, Character b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Byte a, Byte b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
     public static boolean isEqual(Boolean a, Boolean b){
-        return a.equals(b);
+        if(a != null && b != null){
+            return a.equals(b);
+        }else{
+            return false;
+        }
     }
 
 }
