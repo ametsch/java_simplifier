@@ -21,6 +21,8 @@ public class Simplifier {
     public static final double doubleLowerLimit = 1.7e-308d;
 
     public static final double pi = 3.14159265358979d;
+
+    public static final double e = 2.71828182845904d;
 //----------------------------------------------------------------------------------------------------------------------
     public static void p(String a){
         System.out.print(a);
