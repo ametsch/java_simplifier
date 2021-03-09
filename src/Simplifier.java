@@ -1,6 +1,5 @@
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Set;
+import java.util.*;
 
 
 public class Simplifier {
@@ -156,6 +155,26 @@ public class Simplifier {
     }
     public static Object[] set2array(Set<Object> a){
         return a.toArray();
+    }
+    public static Set<Object> mkSet(Object ... args){
+        return Set.of(args);
+    }
+    public static ArrayList<Object> mkArrayList(Object ... args){
+        return new ArrayList<Object>(Arrays.asList(args));
+    }
+    public static List<Object> mkList(Object ... args){
+        return Arrays.asList(args);
+    }
+    public static Object[] mkArray(Object ... args){
+        return args;
+    }
+//----------------------------------------------------------------------------------------------------------------------
+    public static String strCombiner(String ... args){
+        StringBuilder temp = new StringBuilder();
+        for(String i : args){
+            temp.append(i);
+        }
+        return temp.toString();
     }
 //----------------------------------------------------------------------------------------------------------------------
 
