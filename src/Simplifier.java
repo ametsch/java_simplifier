@@ -133,5 +133,15 @@ public class Simplifier {
         return true;
     }
 //----------------------------------------------------------------------------------------------------------------------
+    public static Number abs(Number a){
+        return Math.abs(a.doubleValue());
+    }
+    public static Number min(Number a, Number b){
+        return Math.min(a.doubleValue(), b.doubleValue());
+    }
+    public static Number max(Number a, Number b){
+        return Math.max(a.doubleValue(), b.doubleValue());
+    }
+//----------------------------------------------------------------------------------------------------------------------
 
 }
