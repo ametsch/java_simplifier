@@ -53,7 +53,6 @@ public class Simplifier {
             return false;
         }
     }
-
 //----------------------------------------------------------------------------------------------------------------------
     public static double float2double(Float a){
         return Double.valueOf(a);
