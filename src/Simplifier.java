@@ -1,4 +1,6 @@
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Set;
 
 
 public class Simplifier {
@@ -141,6 +143,19 @@ public class Simplifier {
     }
     public static Number max(Number a, Number b){
         return Math.max(a.doubleValue(), b.doubleValue());
+    }
+//----------------------------------------------------------------------------------------------------------------------
+    public static ArrayList<Object> set2arrayList(Set<Object> a){
+        return new ArrayList<>(a);
+    }
+    public static Set<Object> arrayList2set(ArrayList<Object> a){
+        return Set.of(a);
+    }
+    public static Object[] arrayList2array(ArrayList<Object> a){
+        return a.toArray();
+    }
+    public static Object[] set2array(Set<Object> a){
+        return a.toArray();
     }
 //----------------------------------------------------------------------------------------------------------------------
 
