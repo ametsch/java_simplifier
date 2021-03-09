@@ -42,6 +42,10 @@ public class Simplifier {
         System.out.println(a);
     }
 //----------------------------------------------------------------------------------------------------------------------
+    public static void newLine(){
+        System.out.println();
+    }
+//----------------------------------------------------------------------------------------------------------------------
     public static void pf(String a, Object ... args){
         System.out.printf(a, args);
     }
