@@ -1,5 +1,8 @@
 import java.nio.charset.Charset;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.List;
+import java.util.Arrays;
 
 
 public class Simplifier {
