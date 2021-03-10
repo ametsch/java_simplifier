@@ -129,6 +129,15 @@ public class Simplifier {
         }
         return sb.toString();
     }
+    public static String byteArrayList2hexString(ArrayList<Byte> a){
+        StringBuilder sb = new StringBuilder();
+        for(Byte i : a){
+            int temp = (int) i;
+            sb.append(Integer.toHexString(temp));
+            sb.append(" ");
+        }
+        return sb.toString();
+    }
     public static long int2long(int a){
         return a;
     }
