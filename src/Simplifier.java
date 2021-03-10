@@ -38,9 +38,27 @@ public class Simplifier {
     public static void p(Object a){
         System.out.print(a);
     }
+    public static void p(ArrayList<Object> a){
+        System.out.print(a);
+    }
+    public static void p(List<Object> a){
+        System.out.print(a);
+    }
+    public static void p(Set<Object> a){
+        System.out.print(a);
+    }
 //----------------------------------------------------------------------------------------------------------------------
     public static void pln(Object a){
         System.out.println(a);
+    }
+    public static void pln(ArrayList<Object> a){
+        System.out.println(a);
+    }
+    public static void pln(List<Object> a){
+        System.out.print(a);
+    }
+    public static void pln(Set<Object> a){
+        System.out.print(a);
     }
 //----------------------------------------------------------------------------------------------------------------------
     public static void newLine(){
@@ -177,5 +195,4 @@ public class Simplifier {
         return temp.toString();
     }
 //----------------------------------------------------------------------------------------------------------------------
-
 }
