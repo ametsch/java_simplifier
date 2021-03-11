@@ -211,4 +211,15 @@ public class Simplifier {
         return temp.toString();
     }
 //----------------------------------------------------------------------------------------------------------------------
+    public static void printData(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("a variable of type \'short\' or type \'java.lang.Short\' can store a value between "+shortUpperLimit+" and "+shortLowerLimit+"\n");
+        sb.append("a variable of type \'int\' or type \'java.lang.Integer\' can store a value between "+intUpperLimit+" and "+intLowerLimit+"\n");
+        sb.append("a variable of type \'long\' or type \'java.lang.Long\' can store a value between "+longUpperLimit+" and "+longLowerLimit+"\n");
+        sb.append("a variable of type \'byte\' or type \'java.lang.Byte\' can store a value between "+byteUpperLimit+" and "+byteLowerLimit+"\n");
+        sb.append("a variable of type \'float\' or type \'java.lang.Float\' can store up to a 7 decimal digit value between "+floatUpperLimit+" and "+floatLowerLimit+"\n");
+        sb.append("a variable of type \'double\' or type \'java.lang.Double\' can store up to a 15 decimal digit value between "+doubleUpperLimit+" and "+doubleLowerLimit+"\n");
+
+        pln(sb);
+    }
 }
