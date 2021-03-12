@@ -1,4 +1,4 @@
-package Simplifier;
+package simplifier.types;
 
 public class Address {
     private String street, city, state_province, unitNum;

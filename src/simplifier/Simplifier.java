@@ -1,4 +1,4 @@
-package Simplifier;
+package simplifier;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;

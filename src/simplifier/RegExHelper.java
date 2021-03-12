@@ -1,4 +1,4 @@
-package Simplifier;
+package simplifier;
 
 import java.util.regex.*;
 
