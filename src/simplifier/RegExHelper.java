@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2021. Aaron Metsch
+ */
+
 package simplifier;
 
 import java.util.regex.*;
