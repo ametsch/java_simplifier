@@ -9,3 +9,9 @@
 /out/production/simplifier/Simplifier/Tester.class
 /out/production/simplifier/Simplifier/Simplifier.jar
 /out/production/simplifier/Simplifier/Address.class
+/out/production/simplifier/Simplifier/types/Address.class
+/out/production/simplifier/Simplifier/types/Bit.class
+/out/production/simplifier/Simplifier/types/DateTime.class
+/out/production/simplifier/Simplifier/types/Fraction.class
+/out/production/simplifier/Simplifier/types/ImaginaryNumber.class
+/out/production/simplifier/Simplifier/types/Polynomial.class
