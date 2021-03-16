@@ -5,19 +5,23 @@
 package simplifier.types;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Polynomial {
-    private Number[] list;
+    private ArrayList<Number> list;
 
     public Polynomial(Number ... args) {
+        this.list = new ArrayList<Number>(Arrays.asList(args));
+    }
+    public Polynomial(ArrayList<Number> args){
         this.list = args;
     }
 
     public String toString(){
         int a = 0;
         ArrayList<String> b = new ArrayList<>();
-        for(int i = this.list.length+1; i > 0; i--){
-            b.add(0, String.format("%fx^%d", this.list[i], a));
+        for(int i = this.list.size(); i > 0; i--){
+            b.add(0, String.format("%fx^%d", this.list.get(i), a));
             a++;
         }
         StringBuilder sb = new StringBuilder();
@@ -25,7 +29,7 @@ public class Polynomial {
             sb.append(b.get(i));
             sb.append(" + ");
         }
-        sb.append(String.format("%fx^%d", this.list[this.list.length-1], this.list.length));
+        sb.append(String.format("%fx^%d", this.list.get(this.list.size()-1), this.list.size()));
 
         return  sb.toString();
     }
