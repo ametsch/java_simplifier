@@ -7,13 +7,13 @@ package simplifier.types;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Polynomial {
+public class SingleVarPolynomial {
     private ArrayList<Number> list;
 
-    public Polynomial(Number ... args) {
+    public SingleVarPolynomial(Number ... args) {
         this.list = new ArrayList<Number>(Arrays.asList(args));
     }
-    public Polynomial(ArrayList<Number> args){
+    public SingleVarPolynomial(ArrayList<Number> args){
         this.list = args;
     }
 
