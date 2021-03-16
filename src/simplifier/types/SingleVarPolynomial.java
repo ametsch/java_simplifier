@@ -33,4 +33,12 @@ public class SingleVarPolynomial {
 
         return  sb.toString();
     }
+
+    public Number eval(Number x){
+        double out = 0d;
+        for(int i = 0; i < this.list.size(); i++){
+            out += this.list.get(i).doubleValue()*(Math.pow(x.doubleValue(), i));
+        }
+        return out;
+    }
 }
