@@ -50,6 +50,6 @@ public class Fraction extends Number{
     }
 
     public String toString(){
-        return String.format("%f / %f", this.numerator, this.denominator);
+        return String.format("%f / %f", this.numerator.doubleValue(), this.denominator.doubleValue());
     }
 }
