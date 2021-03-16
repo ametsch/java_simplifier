@@ -5,9 +5,9 @@
 package simplifier.types;
 
 public class Fraction extends Number{
-    private double numerator, denominator;
+    private Number numerator, denominator;
 
-    public Fraction(double numerator, double denominator){
+    public Fraction(Number numerator, Number denominator){
         super();
         this.numerator = numerator;
         this.denominator = denominator;
@@ -15,37 +15,37 @@ public class Fraction extends Number{
 
     @Override
     public int intValue() {
-        return (int) (this.numerator/this.denominator);
+        return (int) (this.numerator.doubleValue()/this.denominator.doubleValue());
     }
 
     @Override
     public long longValue() {
-        return (long) (this.numerator/this.denominator);
+        return (long) (this.numerator.doubleValue()/this.denominator.doubleValue());
     }
 
     @Override
     public float floatValue() {
-        return (float) (this.numerator/this.denominator);
+        return (float) (this.numerator.doubleValue()/this.denominator.doubleValue());
     }
 
     @Override
     public double doubleValue() {
-        return this.numerator/this.denominator;
+        return this.numerator.doubleValue()/this.denominator.doubleValue();
     }
 
     public double getNumerator() {
-        return this.numerator;
+        return this.numerator.doubleValue();
     }
 
-    public void setNumerator(double numerator) {
+    public void setNumerator(Number numerator) {
         this.numerator = numerator;
     }
 
     public double getDenominator() {
-        return this.denominator;
+        return this.denominator.doubleValue();
     }
 
-    public void setDenominator(double denominator) {
+    public void setDenominator(Number denominator) {
         this.denominator = denominator;
     }
 
