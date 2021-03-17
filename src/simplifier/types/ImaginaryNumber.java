@@ -12,9 +12,9 @@ public class ImaginaryNumber {
         this.b = 0d;
     }
 
-    public ImaginaryNumber(double a, double b){
-        this.a = a;
-        this.b = b;
+    public ImaginaryNumber(Number a, Number b){
+        this.a = a.doubleValue();
+        this.b = b.doubleValue();
     }
 
     public String toString(){
@@ -28,16 +28,16 @@ public class ImaginaryNumber {
         return this.a;
     }
 
-    public void setA(double a) {
-        this.a = a;
+    public void setA(Number a) {
+        this.a = a.doubleValue();
     }
 
     public double getB() {
         return this.b;
     }
 
-    public void setB(double b) {
-        this.b = b;
+    public void setB(Number b) {
+        this.b = b.doubleValue();
     }
 
 
