@@ -17,6 +17,7 @@ public class ImaginaryNumber {
         this.b = b.doubleValue();
     }
 
+    @Override
     public String toString(){
         if(this.b > 0d){
             return String.format("%f+%fi", this.a, this.b);

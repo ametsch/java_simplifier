@@ -49,6 +49,7 @@ public class Fraction extends Number{
         this.denominator = denominator;
     }
 
+    @Override
     public String toString(){
         return String.format("%s / %s", this.numerator.toString(), this.denominator.toString());
     }

@@ -17,6 +17,7 @@ public class HexInt extends Number{
         this.val = a.longValue();
     }
 
+    @Override
     public String toString(){
         return Long.toHexString(this.val);
     }

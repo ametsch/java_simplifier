@@ -17,6 +17,7 @@ public class SingleVarPolynomial {
         this.list = args;
     }
 
+    @Override
     public String toString(){
         int a = 0;
         ArrayList<String> b = new ArrayList<>();

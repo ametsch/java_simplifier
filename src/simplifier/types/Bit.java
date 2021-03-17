@@ -49,6 +49,17 @@ public class Bit extends Number{
         return this.value;
     }
 
+    public boolean BooleanValue() throws InvalidAttributeValueException {
+        if (this.value == 0){
+            return false;
+        }else if(this.value == 1){
+            return true;
+        }else{
+            throw new InvalidAttributeValueException("Error: Value must be 1 or 0");
+        }
+    }
+
+    @Override
     public String toString(){
         return String.format("%d", this.value);
     }

@@ -25,6 +25,7 @@ public class DateTime {
         this.year = 0;
     }
 
+    @Override
     public String toString(){
         return String.format("%d/%d/%d  %d:%d:%d", this.month, this.day, this.year, this.hour, this.minute, this.second);
     }
