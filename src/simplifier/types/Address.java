@@ -4,6 +4,9 @@
 
 package simplifier.types;
 
+/**
+ * a class to store an address
+ */
 public class Address {
     private String street, city, state_province, unitNum;
     private int zip;

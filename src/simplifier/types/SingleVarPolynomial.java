@@ -7,16 +7,32 @@ package simplifier.types;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * a class for a single variable polynomial
+ */
 public class SingleVarPolynomial {
     private ArrayList<Number> list;
 
+    /**
+     * constructor from array
+     * @param args
+     */
     public SingleVarPolynomial(Number ... args) {
         this.list = new ArrayList<Number>(Arrays.asList(args));
     }
+
+    /**
+     * constructor from ArrayList
+     * @param args
+     */
     public SingleVarPolynomial(ArrayList<Number> args){
         this.list = args;
     }
 
+    /**
+     * toString method
+     * @return java.lang.String
+     */
     @Override
     public String toString(){
         int a = 0;
@@ -35,6 +51,11 @@ public class SingleVarPolynomial {
         return  sb.toString();
     }
 
+    /**
+     * evaluates the polynomial with value of x
+     * @param x java.lang.Number
+     * @return double
+     */
     public Number eval(Number x){
         double out = 0d;
         for(int i = 0; i < this.list.size(); i++){
