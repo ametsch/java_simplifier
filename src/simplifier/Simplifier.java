@@ -328,7 +328,7 @@ public class Simplifier {
         return sb.toString();
     }
     /**
-     * converts an ArrayList<Byte> to a hexadecimal String
+     * converts an ArrayList of Byte's to a hexadecimal String
      * @param a
      * @return
      */
@@ -421,7 +421,7 @@ public class Simplifier {
 //----------------------------------------------------------------------------------------------------------------------
 
     /**
-     * a function to convert a Set<> to an ArrayList<>
+     * a function to convert a Set to an ArrayList
      * @param a
      * @return
      */
@@ -429,7 +429,7 @@ public class Simplifier {
         return new ArrayList<>(a);
     }
     /**
-     * a function to convert an ArrayList<> to a Set<>
+     * a function to convert an ArrayList to a Set
      * @param a
      * @return
      */
@@ -437,7 +437,7 @@ public class Simplifier {
         return Set.of(a);
     }
     /**
-     * a function to convert an ArrayList<> to an array<>
+     * a function to convert an ArrayList to an array
      * @param a
      * @return
      */
@@ -445,7 +445,7 @@ public class Simplifier {
         return a.toArray();
     }
     /**
-     * a function to convert a Set<> to an array
+     * a function to convert a Set to an array
      * @param a
      * @return
      */
@@ -453,7 +453,7 @@ public class Simplifier {
         return a.toArray();
     }
     /**
-     * a function to create a Set<>
+     * a function to create a Set
      * @param args
      * @return
      */
@@ -461,7 +461,7 @@ public class Simplifier {
         return Set.of(args);
     }
     /**
-     * a function to create an ArrayList<>
+     * a function to create an ArrayList
      * @param args
      * @return
      */
@@ -469,7 +469,7 @@ public class Simplifier {
         return new ArrayList<Object>(Arrays.asList(args));
     }
     /**
-     * a function to create a List<>
+     * a function to create a List
      * @param args
      * @return
      */
