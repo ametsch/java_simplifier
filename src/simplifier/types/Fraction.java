@@ -95,6 +95,6 @@ public class Fraction extends Number{
      */
     @Override
     public String toString(){
-        return String.format("%s / %s", this.numerator.toString(), this.denominator.toString());
+        return String.format("( %s / %s )", this.numerator.toString(), this.denominator.toString());
     }
 }
