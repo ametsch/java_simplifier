@@ -4,6 +4,8 @@
 
 package simplifier.types;
 
+import simplifier.RegExHelper;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -12,21 +14,29 @@ import java.util.Arrays;
  */
 public class SingleVarPolynomial {
     private ArrayList<Number> list;
+    private char var;
 
     /**
-     * constructor from array
+     * constructor
      * @param args
      */
     public SingleVarPolynomial(Number ... args) {
+        this.var = 'x';
         this.list = new ArrayList<Number>(Arrays.asList(args));
     }
 
     /**
-     * constructor from ArrayList
+     * constructor with custom alphabetic variable character
+     * @param var char
      * @param args
      */
-    public SingleVarPolynomial(ArrayList<Number> args){
-        this.list = args;
+    public SingleVarPolynomial(char var, Number ... args) throws Error {
+        if(RegExHelper.match(RegExHelper.isAlpha, String.valueOf(var))){
+            this.var = var;
+        }else{
+            throw new Error("Error: You must use an alphabetic character");
+        }
+        this.list = new ArrayList<Number>(Arrays.asList(args));
     }
 
     /**
@@ -38,7 +48,7 @@ public class SingleVarPolynomial {
         int a = 0;
         ArrayList<String> b = new ArrayList<>();
         for(int i = this.list.size(); i > 0; i--){
-            b.add(0, String.format("%fx^%d", this.list.get(i), a));
+            b.add(0, String.format("%f%s^%d", this.list.get(i), this.var, a));
             a++;
         }
         StringBuilder sb = new StringBuilder();
@@ -46,7 +56,7 @@ public class SingleVarPolynomial {
             sb.append(b.get(i));
             sb.append(" + ");
         }
-        sb.append(String.format("%fx^%d", this.list.get(this.list.size()-1), this.list.size()));
+        sb.append(String.format("%f%s^%d", this.list.get(this.list.size()-1), this.var, this.list.size()));
 
         return  sb.toString();
     }
