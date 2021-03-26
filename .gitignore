@@ -26,3 +26,4 @@
 /out/production/simplifier/update.sh
 /out/production/simplifier/build.py
 /venv/
+/out/production/simplifier/simplifier/FileHelper.class
