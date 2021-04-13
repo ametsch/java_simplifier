@@ -151,6 +151,16 @@ public class RegExHelper {
         Matcher m = pat.matcher(str);
         return m.matches();
     }
+    /**
+     *
+     * @param pat java.lang.String -- the regular expression you want to use
+     * @param str java.lang.String -- the String you want to search
+     * @return boolean -- if "str" matches the regular expression "pat"
+     */
+    public static boolean match(String pat, String str){
+        Matcher m = mkPat(pat).matcher(str);
+        return m.matches();
+    }
 
     /**
      * 
