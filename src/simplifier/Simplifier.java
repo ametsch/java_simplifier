@@ -398,6 +398,116 @@ public class Simplifier {
 //----------------------------------------------------------------------------------------------------------------------
 
     /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 10000s place
+     */
+    public static double rnd_10000(Number a){
+        return (Math.round(a.doubleValue()/10000))*10000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1000s place
+     */
+    public static double rnd_1000(Number a){
+        return (Math.round(a.doubleValue()/1000))*1000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 100s place
+     */
+    public static double rnd_100(Number a){
+        return (Math.round(a.doubleValue()/100))*100.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 10s place
+     */
+    public static double rnd_10(Number a){
+        return (Math.round(a.doubleValue()/10))*10.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1s place
+     */
+    public static double rnd_1(Number a){
+        return (Math.round(a.doubleValue()));
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/10ths place
+     */
+    public static double rnd_10th(Number a){
+        return (Math.round(a.doubleValue()*10))/10.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/100ths place
+     */
+    public static double rnd_100th(Number a){
+        return (Math.round(a.doubleValue()*100))/100.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/1000ths place
+     */
+    public static double rnd_1000th(Number a){
+        return (Math.round(a.doubleValue()*1000))/1000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/10000ths place
+     */
+    public static double rnd_10000th(Number a){
+        return (Math.round(a.doubleValue()*10000))/10000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/100000ths place
+     */
+    public static double rnd_100000th(Number a){
+        return (Math.round(a.doubleValue()*100000))/100000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/1000000ths place
+     */
+    public static double rnd_1000000th(Number a){
+        return (Math.round(a.doubleValue()*1000000))/1000000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @return double -- a rounded to the 1/10000000ths place
+     */
+    public static double rnd_10000000th(Number a){
+        return (Math.round(a.doubleValue()*10000000))/10000000.0;
+    }
+
+//----------------------------------------------------------------------------------------------------------------------
+
+    /**
      * a simplified call to java.lang.Math.abs(a)
      * @param a
      * @return
