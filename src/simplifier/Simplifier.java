@@ -399,7 +399,7 @@ public class Simplifier {
 //----------------------------------------------------------------------------------------------------------------------
 
     /**
-     *
+     * a method to round "a" to the specified place value "place"
      * @param a java.lang.Number
      * @param place int -- the place value you want to round to where it is to the left of the decimal point
      * @return double -- a rounded to the 10000s place
@@ -414,7 +414,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 10,000s place
      * @param a java.lang.Number
      * @return double -- a rounded to the 10000s place
      */
@@ -423,7 +423,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1,000s place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1000s place
      */
@@ -432,7 +432,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 100s place
      * @param a java.lang.Number
      * @return double -- a rounded to the 100s place
      */
@@ -441,7 +441,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 10s place
      * @param a java.lang.Number
      * @return double -- a rounded to the 10s place
      */
@@ -450,7 +450,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1s place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1s place
      */
@@ -459,7 +459,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/10ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/10ths place
      */
@@ -468,7 +468,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/100ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/100ths place
      */
@@ -477,7 +477,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/1000ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/1000ths place
      */
@@ -486,7 +486,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/10000ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/10000ths place
      */
@@ -495,7 +495,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/100000ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/100000ths place
      */
@@ -504,7 +504,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/1000000ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/1000000ths place
      */
@@ -513,7 +513,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the 1/10000000ths place
      * @param a java.lang.Number
      * @return double -- a rounded to the 1/10000000ths place
      */
@@ -522,7 +522,7 @@ public class Simplifier {
     }
 
     /**
-     *
+     * a method to round "a" to the specified place value "place"
      * @param a java.lang.Number
      * @param place double -- the place value you want to round to where it is to the right of the decimal point
      * @return double -- a rounded to the 10000s place
