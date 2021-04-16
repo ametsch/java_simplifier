@@ -9,6 +9,7 @@
 
 package simplifier;
 
+import javax.management.InvalidAttributeValueException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Set;
@@ -301,7 +302,7 @@ public class Simplifier {
         return new String(a, Charset.forName("UTF-8"));
     }
     /**
-     * converts a byte[] to type String with specified Charset
+     * converts a java.lang.String to type byte[] with specified Charset
      * @param a
      * @param charset
      * @return
@@ -310,7 +311,7 @@ public class Simplifier {
         return a.getBytes(charset);
     }
     /**
-     * converts a byte[] to type String using the specified Charset
+     * converts a byte[] to type java.lang.String using the specified Charset
      * @param a
      * @param charset
      * @return
@@ -396,6 +397,21 @@ public class Simplifier {
         return true;
     }
 //----------------------------------------------------------------------------------------------------------------------
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @param place int -- the place value you want to round to where it is to the left of the decimal point
+     * @return double -- a rounded to the 10000s place
+     * @throws InvalidAttributeValueException when place value is not divisible by 10.
+     */
+    public static double rnd_left_num(Number a, int place) throws InvalidAttributeValueException {
+        if (place % 10 != 0){
+            throw new InvalidAttributeValueException("Error: place must be divisible by 10.");
+        } else{
+            return (Math.round(a.doubleValue()/place))*((double) place);
+        }
+    }
 
     /**
      *
@@ -503,6 +519,21 @@ public class Simplifier {
      */
     public static double rnd_10000000th(Number a){
         return (Math.round(a.doubleValue()*10000000))/10000000.0;
+    }
+
+    /**
+     *
+     * @param a java.lang.Number
+     * @param place double -- the place value you want to round to where it is to the right of the decimal point
+     * @return double -- a rounded to the 10000s place
+     * @throws InvalidAttributeValueException when place value is not divisible by 10.
+     */
+    public static double rnd_right_num(Number a, double place) throws InvalidAttributeValueException {
+        if (place % 10.0 != 0.0){
+            throw new InvalidAttributeValueException("Error: place must be divisible by 10.");
+        } else{
+            return (Math.round(a.doubleValue()*place))/place;
+        }
     }
 
 //----------------------------------------------------------------------------------------------------------------------
