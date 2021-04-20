@@ -19,3 +19,4 @@ build
 /LICENSE
 /build.gradle
 /.github/workflows/
+/src/test/
