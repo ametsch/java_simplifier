@@ -4,6 +4,9 @@
 
 package simplifier;
 
+import org.json.JSONObject;
+import org.json.XML;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -36,6 +39,4 @@ public class APIHelper {
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();
     }
-
-
 }
