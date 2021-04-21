@@ -20,7 +20,7 @@ import java.security.NoSuchAlgorithmException;
 /**
  * a class to make hashing using the SHA algorithms much easier
  */
-class Hasher {
+public class Hasher {
     private Hasher(){}
     /**
      * the hash algorithm you want the class to use
