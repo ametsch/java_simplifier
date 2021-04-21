@@ -18,6 +18,16 @@ public class Address {
     private long buildingNum;
 
     //apt constructor:
+
+    /**
+     * apartment constructor
+     * @param buildingNum long
+     * @param street java.lang.String
+     * @param city java.lang.String
+     * @param state_province java.lang.String
+     * @param zip int
+     * @param unitNum java.lang.String
+     */
     public Address(long buildingNum, String street, String city, String state_province, int zip, String unitNum) {
         this.street = street;
         this.city = city;
@@ -28,6 +38,15 @@ public class Address {
     }
 
     //house constructor:
+
+    /**
+     * house constructor
+     * @param buildingNum long
+     * @param street java.lang.String
+     * @param city java.lang.String
+     * @param state_province java.lang.String
+     * @param zip int
+     */
     public Address(long buildingNum, String street, String city, String state_province, int zip) {
         this.street = street;
         this.city = city;
@@ -36,6 +55,7 @@ public class Address {
         this.zip = zip;
         this.buildingNum = buildingNum;
     }
+
 
     public String getStreet() {
         return street;
