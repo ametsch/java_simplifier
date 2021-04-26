@@ -17,8 +17,8 @@ public class Fraction extends Number{
 
     /**
      * constructor from any 2 Number values
-     * @param numerator java.lang.Number
-     * @param denominator java.lang.Number
+     * @param numerator {@code java.lang.Number}
+     * @param denominator {@code java.lang.Number}
      */
     public Fraction(Number numerator, Number denominator){
         super();
@@ -27,8 +27,8 @@ public class Fraction extends Number{
     }
 
     /**
-     * returns the integer value of the fraction
-     * @return int
+     * returns the {@code int} value of the fraction
+     * @return {@code int}
      */
     @Override
     public int intValue() {
@@ -36,8 +36,8 @@ public class Fraction extends Number{
     }
 
     /**
-     * returns the long value of the fraction
-     * @return long
+     * returns the {@code long} value of the fraction
+     * @return {@code long}
      */
     @Override
     public long longValue() {
@@ -45,8 +45,8 @@ public class Fraction extends Number{
     }
 
     /**
-     * returns the float value of the fraction
-     * @return float
+     * returns the {@code float} value of the fraction
+     * @return {@code float}
      */
     @Override
     public float floatValue() {
@@ -54,8 +54,8 @@ public class Fraction extends Number{
     }
 
     /**
-     * returns the double value of the fraction
-     * @return double
+     * returns the {@code double} value of the fraction
+     * @return {@code double}
      */
     @Override
     public double doubleValue() {
@@ -64,7 +64,7 @@ public class Fraction extends Number{
 
     /**
      * returns the numerator
-     * @return double
+     * @return {@code double}
      */
     public double getNumerator() {
         return this.numerator.doubleValue();
@@ -72,7 +72,7 @@ public class Fraction extends Number{
 
     /**
      * sets the numerator
-     * @param numerator java.lang.Number
+     * @param numerator {@code java.lang.Number}
      */
     public void setNumerator(Number numerator) {
         this.numerator = numerator;
@@ -80,7 +80,7 @@ public class Fraction extends Number{
 
     /**
      * returns the denominator
-     * @return double
+     * @return {@code double}
      */
     public double getDenominator() {
         return this.denominator.doubleValue();
@@ -88,7 +88,7 @@ public class Fraction extends Number{
 
     /**
      * sets the denominator
-     * @param denominator java.lang.Number
+     * @param denominator {@code java.lang.Number}
      */
     public void setDenominator(Number denominator) {
         this.denominator = denominator;
@@ -96,7 +96,7 @@ public class Fraction extends Number{
 
     /**
      * toString method
-     * @return java.lang.String
+     * @return {@code java.lang.String}
      */
     @Override
     public String toString(){

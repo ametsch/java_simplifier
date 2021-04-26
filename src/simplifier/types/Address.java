@@ -21,12 +21,12 @@ public class Address {
 
     /**
      * apartment constructor
-     * @param buildingNum long
-     * @param street java.lang.String
-     * @param city java.lang.String
-     * @param state_province java.lang.String
-     * @param zip int
-     * @param unitNum java.lang.String
+     * @param buildingNum {@code long}
+     * @param street {@code java.lang.String}
+     * @param city {@code java.lang.String}
+     * @param state_province {@code java.lang.String}
+     * @param zip {@code int}
+     * @param unitNum {@code java.lang.String}
      */
     public Address(long buildingNum, String street, String city, String state_province, int zip, String unitNum) {
         this.street = street;
@@ -41,11 +41,11 @@ public class Address {
 
     /**
      * house constructor
-     * @param buildingNum long
-     * @param street java.lang.String
-     * @param city java.lang.String
-     * @param state_province java.lang.String
-     * @param zip int
+     * @param buildingNum {@code long}
+     * @param street {@code java.lang.String}
+     * @param city {@code java.lang.String}
+     * @param state_province {@code java.lang.String}
+     * @param zip {@code int}
      */
     public Address(long buildingNum, String street, String city, String state_province, int zip) {
         this.street = street;

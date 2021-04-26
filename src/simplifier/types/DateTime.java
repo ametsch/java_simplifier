@@ -18,12 +18,12 @@ public class DateTime {
 
     /**
      * constructor
-     * @param day byte
-     * @param month byte
-     * @param year short
-     * @param hour byte
-     * @param minute byte
-     * @param second byte
+     * @param day {@code byte}
+     * @param month {@code byte}
+     * @param year {@code short}
+     * @param hour {@code byte}
+     * @param minute {@code byte}
+     * @param second {@code byte}
      */
     public DateTime(byte day, byte month, short year, byte hour, byte minute, byte second) {
         this.month = month;
@@ -48,7 +48,7 @@ public class DateTime {
 
     /**
      * toString method
-     * @return java.lang.String
+     * @return {@code java.lang.String}
      */
     @Override
     public String toString(){
@@ -57,7 +57,7 @@ public class DateTime {
 
     /**
      * returns the month
-     * @return byte
+     * @return {@code byte}
      */
     public byte getMonth() {
         return month;
@@ -65,7 +65,7 @@ public class DateTime {
 
     /**
      * a method to set the month
-     * @param month byte
+     * @param month {@code byte}
      */
     public void setMonth(byte month) {
         this.month = month;
@@ -73,7 +73,7 @@ public class DateTime {
 
     /**
      * returns the day
-     * @return byte
+     * @return {@code byte}
      */
     public byte getDay() {
         return day;
@@ -81,7 +81,7 @@ public class DateTime {
 
     /**
      * a method to set the day
-     * @param day byte
+     * @param day {@code byte}
      */
     public void setDay(byte day) {
         this.day = day;
@@ -89,7 +89,7 @@ public class DateTime {
 
     /**
      * returns the hour
-     * @return byte
+     * @return {@code byte}
      */
     public byte getHour() {
         return hour;
@@ -97,7 +97,7 @@ public class DateTime {
 
     /**
      * a method to set the hour
-     * @param hour byte
+     * @param hour {@code byte}
      */
     public void setHour(byte hour) {
         this.hour = hour;
@@ -105,7 +105,7 @@ public class DateTime {
 
     /**
      * returns the minute
-     * @return byte
+     * @return {@code byte}
      */
     public byte getMinute() {
         return minute;
@@ -113,7 +113,7 @@ public class DateTime {
 
     /**
      * a method to set the minute
-     * @param minute byte
+     * @param minute {@code byte}
      */
     public void setMinute(byte minute) {
         this.minute = minute;
@@ -121,7 +121,7 @@ public class DateTime {
 
     /**
      * returns the second
-     * @return byte
+     * @return {@code byte}
      */
     public byte getSecond() {
         return second;
@@ -129,7 +129,7 @@ public class DateTime {
 
     /**
      * a method to set the second
-     * @param second byte
+     * @param second {@code byte}
      */
     public void setSecond(byte second) {
         this.second = second;
@@ -137,7 +137,7 @@ public class DateTime {
 
     /**
      * returns the year
-     * @return short
+     * @return {@code short}
      */
     public short getYear() {
         return year;
@@ -145,7 +145,7 @@ public class DateTime {
 
     /**
      * a method to set the year
-     * @param year short
+     * @param year {@code short}
      */
     public void setYear(short year) {
         this.year = year;

@@ -18,7 +18,7 @@ public class HexInt extends Number{
 
     /**
      * constructor from a String
-     * @param a java.lang.String
+     * @param a {@code java.lang.String}
      */
     public HexInt(String a){
         super();
@@ -27,7 +27,7 @@ public class HexInt extends Number{
 
     /**
      * constructor from a Number
-     * @param a java.lang.Number
+     * @param a {@code java.lang.Number}
      */
     public HexInt(Number a){
         super();
@@ -36,7 +36,7 @@ public class HexInt extends Number{
 
     /**
      * toString method
-     * @return java.lang.String
+     * @return {@code java.lang.String}
      */
     @Override
     public String toString(){
@@ -44,8 +44,8 @@ public class HexInt extends Number{
     }
 
     /**
-     * returns int value
-     * @return int
+     * returns {@code int} value
+     * @return {@code int}
      */
     @Override
     public int intValue() {
@@ -53,8 +53,8 @@ public class HexInt extends Number{
     }
 
     /**
-     * returns long value
-     * @return long
+     * returns {@code long} value
+     * @return {@code long}
      */
     @Override
     public long longValue() {
@@ -62,8 +62,8 @@ public class HexInt extends Number{
     }
 
     /**
-     * returns float value
-     * @return float
+     * returns {@code float} value
+     * @return {@code float}
      */
     @Override
     public float floatValue() {
@@ -71,8 +71,8 @@ public class HexInt extends Number{
     }
 
     /**
-     * returns double value
-     * @return double
+     * returns {@code double} value
+     * @return {@code double}
      */
     @Override
     public double doubleValue() {

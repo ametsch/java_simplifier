@@ -19,7 +19,7 @@ public class Bit extends Number{
 
     /**
      * constructor
-     * @param value byte
+     * @param value {@code byte}
      * @throws InvalidAttributeValueException if value is not 1 or 0
      */
     public Bit(byte value) throws InvalidAttributeValueException {
@@ -40,7 +40,7 @@ public class Bit extends Number{
 
     /**
      * a method to set the value
-     * @param value byte
+     * @param value {@code byte}
      * @throws InvalidAttributeValueException if value is not 1 or 0
      */
     public void setValue(byte value) throws InvalidAttributeValueException {
@@ -52,8 +52,8 @@ public class Bit extends Number{
     }
 
     /**
-     * returns int value
-     * @return int
+     * returns {@code int} value
+     * @return {@code int}
      */
     @Override
     public int intValue() {
@@ -61,8 +61,8 @@ public class Bit extends Number{
     }
 
     /**
-     * returns long value
-     * @return long
+     * returns {@code long} value
+     * @return {@code long}
      */
     @Override
     public long longValue() {
@@ -70,8 +70,8 @@ public class Bit extends Number{
     }
 
     /**
-     * returns float value
-     * @return float
+     * returns {@code float} value
+     * @return {@code float}
      */
     @Override
     public float floatValue() {
@@ -79,8 +79,8 @@ public class Bit extends Number{
     }
 
     /**
-     * returns double value
-     * @return double
+     * returns {@code double} value
+     * @return {@code double}
      */
     @Override
     public double doubleValue() {
@@ -88,8 +88,8 @@ public class Bit extends Number{
     }
 
     /**
-     * a method to return the value as a boolean (1:True, 0:False)
-     * @return boolean
+     * a method to return the value as a {@code boolean} (1:True, 0:False)
+     * @return {@code boolean}
      * @throws InvalidAttributeValueException if value is not 1 or 0
      */
     public boolean BooleanValue() throws InvalidAttributeValueException {
@@ -104,7 +104,7 @@ public class Bit extends Number{
 
     /**
      * toString method
-     * @return java.lang.String
+     * @return {@code java.lang.String}
      */
     @Override
     public String toString(){

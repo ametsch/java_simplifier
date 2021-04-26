@@ -25,8 +25,8 @@ public class ImaginaryNumber {
 
     /**
      * constructor using 2 Number values
-     * @param a java.lang.Number
-     * @param b java.lang.Number -- the coefficient of i
+     * @param a {@code java.lang.Number}
+     * @param b {@code java.lang.Number} -- the coefficient of i
      */
     public ImaginaryNumber(Number a, Number b){
         this.a = a.doubleValue();
@@ -35,7 +35,7 @@ public class ImaginaryNumber {
 
     /**
      * toString method
-     * @return java.lang.String
+     * @return {@code java.lang.String}
      */
     @Override
     public String toString(){
@@ -47,7 +47,7 @@ public class ImaginaryNumber {
 
     /**
      * returns the value of a
-     * @return double
+     * @return {@code double}
      */
     public double getA() {
         return this.a;
@@ -55,7 +55,7 @@ public class ImaginaryNumber {
 
     /**
      * sets the value of a
-     * @param a java.lang.Number
+     * @param a {@code java.lang.Number}
      */
     public void setA(Number a) {
         this.a = a.doubleValue();
@@ -63,7 +63,7 @@ public class ImaginaryNumber {
 
     /**
      * returns the value of b
-     * @return double
+     * @return {@code double}
      */
     public double getB() {
         return this.b;
@@ -71,7 +71,7 @@ public class ImaginaryNumber {
 
     /**
      * sets the value of b
-     * @param b java.lang.Number
+     * @param b {@code java.lang.Number}
      */
     public void setB(Number b) {
         this.b = b.doubleValue();
