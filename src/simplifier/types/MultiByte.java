@@ -65,7 +65,7 @@ public class MultiByte {
         }else if(temp.length() == 2){
             return temp;
         }else{
-            return "";
+            return "GG";
         }
     }
 
@@ -80,4 +80,6 @@ public class MultiByte {
 
         return sb.toString().toUpperCase();
     }
+
+
 }
