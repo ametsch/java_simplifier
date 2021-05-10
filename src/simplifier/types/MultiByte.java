@@ -11,16 +11,19 @@ package simplifier.types;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MultiByte {
+public class MultiByte extends MultiNum{
     private ArrayList<Byte> arr;
 
     public MultiByte(ArrayList<Byte> arr){
+        super();
         this.arr = arr;
     }
     public MultiByte(Byte[] arr){
+        super();
         this.arr = new ArrayList<Byte>(Arrays.asList(arr));
     }
     public MultiByte(){
+        super();
         this.arr = new ArrayList<>();
     }
     public void add(byte b){
@@ -37,49 +40,6 @@ public class MultiByte {
         }
     }
 
-    @Override
-    public String toString(){
-        StringBuilder sb = new StringBuilder();
-        for(byte i : this.arr){
-            sb.append(i);
-            sb.append("  ");
-        }
-        return sb.toString();
-    }
-
-    public String getHex(){
-        StringBuilder sb = new StringBuilder();
-
-        for(Byte i : this.arr){
-            sb.append(hexByte(i));
-            sb.append("  ");
-        }
-
-        return sb.toString();
-    }
-
-    public static String hexByte(Byte a){
-        String temp = Integer.toHexString(a);
-        if(temp.length() == 1){
-            return "0"+temp;
-        }else if(temp.length() == 2){
-            return temp;
-        }else{
-            return "GG";
-        }
-    }
-
-    public String getValues(){
-        StringBuilder sb = new StringBuilder();
-        for(Byte i : this.arr){
-            sb.append(i);
-            sb.append("\t\t");
-            sb.append(hexByte(i));
-            sb.append("\n");
-        }
-
-        return sb.toString().toUpperCase();
-    }
 
 
 }
