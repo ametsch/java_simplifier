@@ -33,3 +33,5 @@
 /out/production/simplifier/org/
 /out/production/simplifier/simplifier/Time.class
 /out/production/simplifier/simplifier/types/MultiByte.class
+/out/production/simplifier/simplifier/types/MultiInt.class
+/out/production/simplifier/simplifier/types/MultiNum.class
