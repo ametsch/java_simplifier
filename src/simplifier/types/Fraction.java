@@ -102,4 +102,8 @@ public class Fraction extends Number{
     public String toString(){
         return String.format("( %s / %s )", this.numerator.toString(), this.denominator.toString());
     }
+
+    public double asPercent(){
+        return (this.numerator.doubleValue() / this.denominator.doubleValue()) * 100.0;
+    }
 }
