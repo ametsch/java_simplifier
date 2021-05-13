@@ -35,3 +35,6 @@
 /out/production/simplifier/simplifier/types/MultiByte.class
 /out/production/simplifier/simplifier/types/MultiInt.class
 /out/production/simplifier/simplifier/types/MultiNum.class
+/out/production/simplifier/simplifier/types/TwoDimensionalArray.class
+/out/production/simplifier/simplifier/types/JSON/JSON.class
+/out/production/simplifier/simplifier/types/JSON/JSONElement.class
