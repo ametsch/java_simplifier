@@ -23,8 +23,15 @@ public class JSONElement<E> {
             try {
                 return String.format("\"%s\" : %f", key, value);
             }catch (IllegalFormatConversionException f){
-                return String.format("\"%s\" : \"%s\"", key, value.toString());
+                try {
+                    if (((JSON)value).isJSON()){
+                        return String.format("\"%s\" : %s", key, value.toString());
+                    }
+                }catch (ClassCastException g){
+                    return String.format("\"%s\" : \"%s\"", key, value.toString());
+                }
             }
         }
+        return "";
     }
 }

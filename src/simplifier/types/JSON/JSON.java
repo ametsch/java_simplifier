@@ -42,6 +42,22 @@ public class JSON {
         return sb.toString();
     }
 
+    public String toString(boolean tab){
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("{\n");
+        for(JSONElement element : arr){
+            if (tab) {
+                sb.append("    ");
+                sb.append(element.toString());
+                sb.append(",\n");
+            }
+        }
+        sb.deleteCharAt(sb.length()-2);
+        sb.append("    }");
+        return sb.toString();
+    }
+
     public void toFile(String filePath){
         PrintStream out = null;
         try {
@@ -53,5 +69,9 @@ public class JSON {
         assert out != null;
         out.print(this.toString());
         out.close();
+    }
+
+    public boolean isJSON(){
+        return true;
     }
 }
