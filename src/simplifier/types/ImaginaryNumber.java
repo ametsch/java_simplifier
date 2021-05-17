@@ -77,5 +77,7 @@ public class ImaginaryNumber {
         this.b = b.doubleValue();
     }
 
-
+    public ImaginaryNumber add(ImaginaryNumber val){
+        return new ImaginaryNumber(val.getA()+this.getA(), val.getB()+this.getB());
+    }
 }
