@@ -77,6 +77,11 @@ public class ImaginaryNumber {
         this.b = b.doubleValue();
     }
 
+    /**
+     *
+     * @param val {@code ImaginaryNumber}
+     * @return {@code ImaginaryNumber} -- the sum of the current imaginary number and val
+     */
     public ImaginaryNumber add(ImaginaryNumber val){
         return new ImaginaryNumber(val.getA()+this.getA(), val.getB()+this.getB());
     }
