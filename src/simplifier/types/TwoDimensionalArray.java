@@ -9,6 +9,7 @@
 
 package simplifier.types;
 
+import javax.management.InvalidAttributeValueException;
 import java.util.ArrayList;
 
 /**
@@ -22,10 +23,12 @@ public class TwoDimensionalArray<E>{
 
     /**
      * constructor from a 2D Array
-     * @param arr
+     * @param arr -- {@code E[][]}
      */
     public TwoDimensionalArray(E[][] arr){
         this.arr = arr;
+        this.rows = arr.length;
+        this.cols = arr[0].length;
     }
 
     /**
@@ -85,5 +88,27 @@ public class TwoDimensionalArray<E>{
             }
         }
         return temp;
+    }
+
+    /**
+     * a method to set an entire row at once
+     * @param e -- {@code E[]} -- an array of E that is the same length as the number of columns
+     * @param row -- {@code int} -- the row to replace;
+     * @throws InvalidAttributeValueException when e is not the same length as the number of columns
+     */
+    public void setRow(E[] e, int row) throws InvalidAttributeValueException {
+        if(e.length == cols){
+            arr[row] = e;
+        }else{
+            throw new InvalidAttributeValueException("e must be the same length as the number of columns.");
+        }
+    }
+
+    public int getCols() {
+        return cols;
+    }
+
+    public int getRows() {
+        return rows;
     }
 }
