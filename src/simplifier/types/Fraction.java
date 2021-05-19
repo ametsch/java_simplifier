@@ -103,6 +103,11 @@ public class Fraction extends Number{
         return String.format("( %s / %s )", this.numerator.toString(), this.denominator.toString());
     }
 
+    /**
+     * a method to return the Fraction as a percentage
+     * ex: {@code numerator=4}, {@code denominator=10} -> {@code 40.0}
+     * @return -- {@code double} -- the percentage
+     */
     public double asPercent(){
         return (this.numerator.doubleValue() / this.denominator.doubleValue()) * 100.0;
     }
