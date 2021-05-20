@@ -9,6 +9,8 @@
 
 package simplifier.types;
 
+import java.time.Instant;
+
 /**
  * a class to store an date and time in the United States date and time format
  */
@@ -149,5 +151,14 @@ public class DateTime {
      */
     public void setYear(short year) {
         this.year = year;
+    }
+
+    /**
+     * a method to return the UNIX Timestamp of this object
+     * @return {@code long} the UNIX timestamp
+     */
+    public long toUnixTimestamp(){
+        Instant time = Instant.parse(toString());
+        return time.getEpochSecond();
     }
 }
