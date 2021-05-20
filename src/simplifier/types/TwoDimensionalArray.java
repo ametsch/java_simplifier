@@ -111,4 +111,8 @@ public class TwoDimensionalArray<E>{
     public int getRows() {
         return rows;
     }
+
+    public boolean isSquare(){
+        return rows == cols;
+    }
 }
