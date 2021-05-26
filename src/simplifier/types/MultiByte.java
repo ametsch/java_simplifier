@@ -29,17 +29,23 @@ public class MultiByte extends MultiNum{
     public void add(byte b){
         this.arr.add(b);
     }
-    public void add(Byte[] b){
-        for(Byte i : b){
+    public void add(byte[] b){
+        for(byte i : b){
             this.arr.add(i);
         }
     }
     public void add(ArrayList<Byte> b){
-        for(Byte i : b){
+        for(byte i : b){
             this.arr.add(i);
         }
     }
 
-
+    public String asString(){
+        StringBuilder sb = new StringBuilder();
+        for(byte i : arr){
+            sb.append((char) (i & 0xFF));
+        }
+        return sb.toString();
+    }
 
 }
