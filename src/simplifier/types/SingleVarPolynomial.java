@@ -1,11 +1,11 @@
+/*
+ * Copyright (c) 2021. Aaron Metsch
+ */
+
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-
-/*
- * Copyright (c) 2021. Aaron Metsch
- */
 
 package simplifier.types;
 
@@ -16,6 +16,7 @@ import java.util.Arrays;
 
 /**
  * a class for a single variable polynomial
+ * @deprecated
  */
 public class SingleVarPolynomial {
     private ArrayList<Number> list;
