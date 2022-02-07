@@ -36,4 +36,11 @@ public class Polynomial {
         }
         return sb.toString();
     }
+    public Polynomial dy_dx(){
+        ArrayList<Monomial> temp = new ArrayList<>();
+        for (Monomial monomial : this.list){
+            temp.add(monomial.dy_dx());
+        }
+        return new Polynomial(temp);
+    }
 }

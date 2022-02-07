@@ -5,34 +5,38 @@
 package simplifier.types.polynomial;
 
 public class Monomial {
-    private Number coefficient, exponent;
+    private Number coeff, exp;
 
-    public Monomial(Number coefficient, Number exponent) {
-        this.coefficient = coefficient;
-        this.exponent = exponent;
+    public Monomial(Number coeff, Number exp) {
+        this.coeff = coeff;
+        this.exp = exp;
     }
     public Monomial() {
-        this.coefficient = 0;
-        this.exponent = 0;
+        this.coeff = 0;
+        this.exp = 0;
     }
-    public Number getCoefficient() {
-        return coefficient;
+    public Number getcoeff() {
+        return coeff;
     }
-    public void setCoefficient(Number coefficient) {
-        this.coefficient = coefficient;
+    public void setcoeff(Number coeff) {
+        this.coeff = coeff;
     }
     public Number getExponent() {
-        return exponent;
+        return exp;
     }
-    public void setExponent(Number exponent) {
-        this.exponent = exponent;
+    public void setExponent(Number exp) {
+        this.exp = exp;
     }
 
     public double evaluate(Number val){
-        return this.coefficient.doubleValue() * (Math.pow(val.doubleValue(), this.exponent.doubleValue()));
+        return this.coeff.doubleValue() * (Math.pow(val.doubleValue(), this.exp.doubleValue()));
     }
 
     public String toString(){
-        return this.coefficient.toString()+"X^"+this.exponent;
+        return this.coeff.toString()+"X^"+this.exp;
+    }
+
+    public Monomial dy_dx(){
+        return new Monomial((this.coeff.doubleValue()*this.exp.doubleValue()), this.exp.doubleValue()-1);
     }
 }
