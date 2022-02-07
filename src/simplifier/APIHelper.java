@@ -9,8 +9,8 @@
 
 package simplifier;
 
-import org.json.JSONObject;
-import org.json.XML;
+//import org.json.JSONObject;
+//import org.json.XML;
 
 import java.io.IOException;
 import java.net.URI;

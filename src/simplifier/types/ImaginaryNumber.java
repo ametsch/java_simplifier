@@ -85,4 +85,12 @@ public class ImaginaryNumber {
     public ImaginaryNumber add(ImaginaryNumber val){
         return new ImaginaryNumber(val.getA()+this.getA(), val.getB()+this.getB());
     }
+    // public static void sqrt(Number num){
+    //     boolean i = false;
+    //     if(num.doubleValue() < 0){
+    //         num = num.doubleValue() * -1;
+    //         i = true;
+    //     }
+    // }
 }
+

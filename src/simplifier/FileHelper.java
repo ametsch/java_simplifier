@@ -34,12 +34,13 @@ public class FileHelper {
             while(scanner.hasNextLine()){
                 out.add(scanner.nextLine());
             }
-
+            scanner.close();
             return out;
 
         }else{
             throw new FileNotFoundException("Error: File not found");
         }
+        
     }
 
     /**
@@ -57,7 +58,7 @@ public class FileHelper {
                 out.append(scanner.nextLine());
                 out.append("\n");
             }
-
+            scanner.close();
             return out.toString();
 
         }else{
@@ -80,7 +81,7 @@ public class FileHelper {
             while(scanner.hasNextLine()){
                 out.add(scanner.nextLine());
             }
-
+            scanner.close();
             return out;
 
         }else{
@@ -104,7 +105,7 @@ public class FileHelper {
                 out.append(scanner.nextLine());
                 out.append("\n");
             }
-
+            scanner.close();
             return out.toString();
 
         }else{
